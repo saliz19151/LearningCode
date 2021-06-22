@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    You can see that we've created a CSS class called blue-text within the <style> tag.
+    You can apply a class to an HTML element like this: <h2 class="blue-text">CatPhotoApp</h2>. Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
+
+    you can also include google fonts this one is called lobster  
+-->
+<!--link href="https://fonts.googleapis.com/css?family=Lobster" rel = "stylesheet" type = "text/css" -->
+
+<style>
+    .silver-background{
+    background-color: silver; 
+  }
+/*
+  borders have 3 elements: 
+  style, color, and width
+  */
+  .thick-green-border{
+    border-color: greenyellow; 
+    border-width: 10px; 
+    border-style: solid; 
+    /* border radius makes the border softer/rounded at the corners
+    50% makes the border a circle */
+    border-radius: 50%;
+  }
+
+    p{
+    font-size: 16px; 
+    font-family: monospace; 
+    /* Add google fonts!!!*/
+    
+    }
+/*
+When one font isn't available, you can tell the browser to "degrade" to another font.
+
+For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica isn't available,
+
+*/
+
+    h2{
+      color: blue; 
+      font-family: Lobster, monospace; 
+    }
+    .blue-text{
+        color:blueviolet; 
+    }
+    .smaller-image {
+    width: 100px; 
+  }
+  </style>
+
+<head>
+    <meta />
+</head>
+
+
+<!--
+    ID Elembets 
+    You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.
+    don't give more than one element the same id attribute.
+--> 
+
+<body>
+<!--
+    changing text color
+    <h2 style = "color: red;"></h2>
+-->
+<h2 class = "red-text">CatPhotoApp</h2>
+
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+<!--refrencing from style element smaller-image-->
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." class = "smaller-image thick-green-border"></a>
+
+  <div class = "silver-background">
+    <p class = "red-text">Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+
+  <form id = "cat-photo-app" action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+</body>
+</html>

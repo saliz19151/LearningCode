@@ -1,0 +1,141 @@
+<h2>CatPhotoApp</h2>
+<main>
+<!--
+Change your external link to an internal link by changing the href attribute to "#footer" and the text from cat photos to Jump to Bottom.
+
+Remove the target="_blank" attribute from the anchor tag since this causes the linked document to open in a new window tab.
+
+Then add an id attribute with a value of footer to the <footer> element at the bottom of the page.
+
+-->
+  <!--<a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>-->
+  <a href="#footer">Jump to bottom</a>
+  <img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+</main>
+
+<footer id = "footer">Copyright Cat Photo App</footer>
+
+<!---------------------------------------------------------------------------->
+<!--
+    Nest the existing a element within a new p element. The new paragraph should have text that says View more cat photos, where cat photos is a link, and the rest is plain text.
+-->
+<h2>CatPhotoApp</h2>
+<main>
+
+  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+
+  <img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+  <!--ADD-->
+  <p>View More 
+    <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+  </p> 
+</main>
+
+<!--
+    The current value of the href attribute is a link that points to "https://www.freecatphotoapp.com". Replace the href attribute value with a #, also known as a hash symbol, to create a dead link.
+
+For example: href="#"
+-->
+
+    <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+
+<!--
+    Place the existing image element within an a (anchor) element.
+
+Once you've done this, hover over your image with your cursor. Your cursor's normal pointer should become the link clicking pointer. The photo is now a link.
+-->
+<a href = "#"><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+<!--
+    Remove the last two p elements and create an unordered list of three things that cats love at the bottom of the page.
+-->
+<ul>
+    <li>milk</li>
+    <li>cheese</li>
+    <li>mice</li>
+  </ul>
+  
+<!--
+    Create an ordered list of the top 3 things cats hate the most.
+-->
+<ol>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ol>
+
+<!------
+    add a text feild 
+-->
+<input type="text"> 
+<input type="text" placeholder = "this is placeholder text">
+<input type="text" placeholder =  "cat photo URL">
+<form action = "https://www.freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+    <button type = "submit"> submit </button>
+    <input type="text" required placeholder="cat photo URL required">
+ </form>
+ <!--
+     radio buttons 
+     Radio buttons are a type of input.
+
+Each of your radio buttons can be nested within its own label element. By wrapping an input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.
+
+All related radio buttons should have the same name attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.
+ -->
+ 
+    <form action = "https://www.freecatphotoapp.com/submit-cat-photo">
+        <input type="text" placeholder="cat photo URL">
+        <button type = "submit"> submit </button>
+        <input type="text" required placeholder="cat photo URL required">
+        <label for = "indoor"> 
+            <input id="indoor" type = "radio" name = "indoor-outdoor"> Indoor
+            </label> 
+          <label for = "outdoor">
+            <input id = "outdoor" type = "radio" name = "indoor-outdoor"> Outdoor
+            </label>
+     </form>
+
+<!--
+    Checkboxes are a type of input.
+-->
+<form>
+    <label for = "loving"><input id = "loving" type = "checkbox" name = "personality"> Loving</label>
+    <label for = "loving"><input id = "loving" type = "checkbox" name = "personality"> Loving</label> 
+    <label for = "loving"><input id = "loving" type = "checkbox" name = "personality"> Loving</label>  
+</form>
+<!--
+    Here, you have two radio inputs. When the user submits the form with the indoor option selected, the form data will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+
+If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.
+
+You can set a checkbox or radio button to be checked by default using the checked attribute.
+
+
+-->
+<label for = "indoor"> 
+    <input id = "indoor" value = "indoor" type = "radio" name = "indoor-outdoor"> Indoor </label>
+<label for = "outdoor">
+    <input id = "outdoor" value = "outdoor" type = "radio" name = "Indoor-outdoor"> Outdoor </label>
+
+
+    <label for = "loving">
+        <input id = "loving" value = "loving" type = "checkbox" name = "personality"> Loving </label> 
+    <label for = "lazy">
+        <input id = "lazy" value = "lazy" type = "checkbox" name = "personality"> Lazy </label>
+    <label for = "energetic">
+        <input id = "energetic" value = "energetic" type = "checkbox" name = "personality"> Energetic </label> 
+
+
+     <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"checked value="indoor"> Indoor</label>
+     <label for="loving"><input id="loving" type="checkbox" name="personality" checked value="loving"> Loving</label>
