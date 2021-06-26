@@ -212,6 +212,119 @@ var lastName = "Lovelace";
 
 lastNameLength = lastName.length;
 //Use Bracket Notation to Find the First Character in a String _________________________________________________________________________________________________________
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+//Understand String Immutability_________________________________________________________________________________________________________
+//The only way to change myStr would be to assign it with a new string
+//Therefore this does not work: 
+var myStr = "Bob";
+myStr[0] = "J";
+
+
+// Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
+//Use Bracket Notation to Find the Nth Character in a String_________________________________________________________________________________________________________
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var thirdLetterOfLastName = lastName[2]; // Change this line
+//Use Bracket Notation to Find the Last Character in a String_________________________________________________________________________________________________________
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var lastLetterOfLastName = lastName[lastName.length-1]; // Change this line
+//Use Bracket Notation to Find the Nth-to-Last Character in a String_________________________________________________________________________________________________________
+// Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length - 2]; 
+//e = 8 - 1; c = 8 - 2
+// Change this line
+
+
+
+
+//Word Blanks_________________________________________________________________________________________________________
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = "A " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + "."; // Change this line
+// Only change code above this line
+
+//Store Multiple Values in one Variable using JavaScript Arrays_________________________________________________________________________________________________________
+// Only change code below this line
+var myArray = ["hello", 4];
+//Nest one Array within Another Array_________________________________________________________________________________________________________
+// Only change code below this line
+var myArray = [[1,2, "hi"], ['a','b']];
+//Access Array Data with Indexes_________________________________________________________________________________________________________
+var myArray = [50,60,70];
+var myData = myArray[0]; 
+
+//Modify Array Data With Indexes_________________________________________________________________________________________________________
+//Unlike strings, the entries of arrays are mutable and can be changed freely.
+// Setup
+var myArray = [18,64,99];
+myArray[0] = 45; 
+myArray[1] = 64; 
+myArray[2] = 99; 
+// Only change code below this line
+//Access Multi-Dimensional Arrays With Indexes_________________________________________________________________________________________________________
+/*
+var arr = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  [[10,11,12], 13, 14]
+];
+arr[3];
+arr[3][0];
+arr[3][0][1];
+
+
+arr[3] is [[10, 11, 12], 13, 14], 
+arr[3][0] is [10, 11, 12],
+ and arr[3][0][1] is 11.
+*/ 
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+
+var myData = myArray[0][0];
+myData = myArray[2][1];
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
+
+//_________________________________________________________________________________________________________
 
 //_________________________________________________________________________________________________________
 
