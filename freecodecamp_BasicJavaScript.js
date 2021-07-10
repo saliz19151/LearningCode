@@ -313,24 +313,102 @@ var myArray = ["apple sauce", 4];
 //also called a multi-dimensional array.
 // Only change code below this line
 var myArray = [["Hello", 4], "hi"];
-//_________________________________________________________________________________________________________
+//Manipulate Arrays With push()_________________________________________________________________________________________________________
+  //An easy way to append data to the end of an array is via the push() function.
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
 
-//_________________________________________________________________________________________________________
+// Only change code below this line
+myArray.push(["dog", 3]);
+//Manipulate Arrays With pop()_________________________________________________________________________________________________________
+//.pop() is used to pop a value off of the end of an array.
+/*
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
 
-//_________________________________________________________________________________________________________
+//The first console.log will display the value 6, and the second will display the value [1, 4].
+*/
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
 
-//_________________________________________________________________________________________________________
+// Only change code below this line
+var removedFromMyArray = myArray.pop();
+//Manipulate Arrays With shift()_________________________________________________________________________________________________________
+//What if you want to remove the first?
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
 
-//_________________________________________________________________________________________________________
+// Only change code below this line
+var removedFromMyArray = myArray.shift();
 
-//_________________________________________________________________________________________________________
+//Manipulate Arrays With unshift()_________________________________________________________________________________________________________
+//.unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
 
-//_________________________________________________________________________________________________________
+// Only change code below this line
+myArray.unshift(["Paul", 35]); 
 
-//_________________________________________________________________________________________________________
+//Shopping List_________________________________________________________________________________________________________
+var myList = [["Choclate", 5], ["Choclate Mix", 20], ["Whipped Cream", 2], ["Heavy Cream", 4], ["Marshmallows", 3]];
 
-//_________________________________________________________________________________________________________
+//Write Reusable JavaScript with Functions_________________________________________________________________________________________________________
+function reusableFunction(){ 
+  console.log("Hi World"); 
+}
 
+//call the function with 
+reusableFunction(); 
+//Passing Values to Functions with Arguments_________________________________________________________________________________________________________
+function functionWithArgs(parameter1, parameter2){
+  console.log(parameter1 + parameter2); 
+}
+
+functionWithArgs(1, 2);
+//Global Scope and Functions_________________________________________________________________________________________________________
+/*
+Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+
+Variables which are declared without the var keyword are automatically created in the global scope.
+*/
+
+// Declare the myGlobal variable below this line
+var myGlobal = 10; 
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5; 
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+
+//Local Scope and Functions_________________________________________________________________________________________________________
+function myLocalScope() {
+
+  // Only change code below this line
+var myVar = 5; 
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 //_________________________________________________________________________________________________________
 
 //_________________________________________________________________________________________________________
